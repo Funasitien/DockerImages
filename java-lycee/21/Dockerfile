@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.source="https://github.com/Funasitien/DockerImage
 LABEL org.opencontainers.image.licenses=MIT
 
 # Chemin du vrai keystore Java
-ENV CACERTS_PATH=/usr/lib64/graalvm/graalvm-java25/lib/security/cacerts
+ENV CACERTS_PATH=/opt/java/openjdk/lib/security/cacerts
 
 # Copier ton certificat
 COPY lycee.crt /tmp/lycee.crt
